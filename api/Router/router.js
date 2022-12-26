@@ -1,0 +1,12 @@
+const express = require('express');
+const auth = require('./../Controller/controller');
+const router = express.Router();
+router.post('/login', auth.login);
+router.post('/signup', auth.signup);
+router.get('/viewgame', auth.viewgame);
+router.get('/viewuser3', auth.viewuser3);
+router.get('/viewuser2', auth.viewuser2);
+router.put('/update/:id', auth.update);
+router.put('/update1/:id', auth.update1);
+router.put('/update2/:id', auth.update2);
+module.exports = router;
